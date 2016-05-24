@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root 'entries#index'
+  root 'static_pages#home'
+  get '/about', to: 'static_pages#about', as: 'about'
+
+
+
   resources :entries
 
 
